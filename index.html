@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css"
+      integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA=="
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <title>Notes App</title>
+
+  </head>
+  <body>
+    
+    <button class="add" id="add"><i class="fas fa-plus"></i> Add note</button>
+    <header class="account-icon">
+      <div class="icons">
+        <div id="account-btn" class="fas fa-user"></div>
+      </div>
+    </header>
+    <div class="account-form">
+      <div id="close-form" class="fas fa-times"></div>
+  
+      <div class="buttons">
+        <button class="btn login-btn active"><i class="fas fa-sign-in-alt"></i> Login</button>
+        <button class="btn register-btn active"><i class="fas fa-user-plus"></i> Register</button>
+      </div>
+  
+      <form  name="myForm" class="login-form active" >
+        <h3>Login now</h3>
+        <input type="email" id="email" name="femail" placeholder="Enter your email" class="box" onblur="check()"/>
+        <input type="password" id="npwd" name="npwd" placeholder="Enter your password" class="box" onblur="checkPassword(0)"/><span id="pwd1"></span>
+        <div class="flex">
+          <input type="checkbox" name="" id="remember-me" />
+          <label for="remember-me">Remember-me</label>
+          <a href="#">Forgot password</a>
+        </div>
+        <input type="submit" class="btn login-now" value="login now" />
+        
+      </form>
+  
+      <form  name="myForm" class="register-form" >
+        <h3>Register now</h3>
+        <input type="email" name="femail" placeholder="Enter your email" class="box" onblur="check()"/>
+        <input type="password" name="pwd" id="npwd" placeholder="Enter your password" onblur="checkPassword(0)" class="box"><span
+				id="pwd1"></span><br><br>
+			  <input type="password" name="pwd" id="cpwd"
+				onblur="checkPassword(1)" placeholder="Enter conform password"class="box"><span id="pwd2"></span> <br><br>
+        <input type="submit" class="btn register-now" value="register now"  />
+
+      </form>
+    </div>
+
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/marked/1.2.7/marked.min.js"
+      integrity="sha512-Sl04EWeJ0QgILm83WoubQbZqh71aWLJP8xnswnKSBI37S+ZtrWVtSHmd1YaYYdC1g9PWN1siY7KO2jU3HtCVHA=="
+      crossorigin="anonymous"
+    ></script>
+
+  </body>
+
+  <script src="script.js"></script>
+
+</html>

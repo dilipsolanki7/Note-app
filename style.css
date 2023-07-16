@@ -1,0 +1,188 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;400&display=swap");
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #5d0ef0;
+  font-family: "Poppins", sans-serif;
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0;
+  padding-top: 3rem;
+  background-image: url("back.jpg");
+}
+
+.add {
+  position: fixed;
+  top: 1rem;
+  right: 5rem;
+  background-color: #0795f3;
+  color: #fff;
+  border: none;
+  border-radius: 3px;
+  padding: 0.5rem 1rem;
+  height: 6.15%;
+  cursor: pointer;
+}
+
+.account-icon {
+  position: fixed;
+  top: 1rem;
+  right: 1rem;
+  background-color: #0795f3;
+  color: #fff;
+  border: none;
+  border-radius: 3px;
+  padding: 0.5rem 1rem;
+  cursor: pointer;
+}
+
+.note {
+  background-color: #fff;
+  box-shadow: 0 0 10px 4px rgba(0, 0, 0, 0.1);
+  margin: 30px 20px;
+  height: 400px;
+  width: 400px;
+  overflow-y: scroll;
+}
+
+.note .tools {
+  background-color: #9ec862;
+  display: flex;
+  justify-content: flex-end;
+  padding: 0.5rem;
+}
+
+.note .tools button {
+  background-color: transparent;
+  float: right;
+  border: none;
+  color: #fff;
+  cursor: pointer;
+  font-size: 20px;
+  margin-left: 0.5rem;
+}
+
+.note textarea {
+  outline: none;
+  font-family: inherit;
+  font-size: 25px;
+  border: none;
+  height: 400px;
+  width: 100%;
+  padding: 20px;
+}
+
+.main {
+  padding: 20px;
+}
+
+.hidden {
+  display: none;
+}
+
+.account-form {
+	position: fixed;
+	right: -150%;
+	top: 0;
+	width: 30rem;
+	border-radius: 10px;
+	background-color: red;
+	display: flex;
+	justify-content: center;
+	gap: 2rem;
+	height: 90%;
+	padding: 2rem;
+	text-align: center;
+	z-index: 1300;
+	flex-flow: column;
+}
+.account-form.active {
+	right: 0;
+	box-shadow: var(--box-shadow);
+}
+
+.account-form #close-form {
+	position: absolute;
+	top: 1.5rem;
+	right: 2.5rem;
+	font-size: 2rem;
+	cursor: pointer;
+	color: var(--black);
+}
+.account-form #close-form:hover {
+	color: var(--pink);
+	transform: rotate(180deg);
+}
+.account-form form {
+	border: var(--border);
+	padding: 2rem;
+	display: none;
+}
+.account-form form.active {
+	display: block;
+}
+.account-form form h3 {
+	font-size: 2.5rem;
+	color: var(--black);
+	padding-bottom: 0.5rem;
+}
+.account-form form .box {
+	width: 100%;
+	padding: 1.2rem 1.4rem;
+	border: var(--border);
+  border-radius: 10px;
+	font-size: 1.6rem;
+	margin: 0.7rem 0;
+}
+.account-form form .flex {
+	padding: 1rem 0;
+	display: flex;
+	align-items: center;
+	gap: 0.5rem;
+}
+.account-form form .flex label {
+	font-size: 20px;
+	color: rgb(20, 4, 1);
+	cursor: pointer;
+}
+.account-form form .flex a {
+	font-size: 20px;
+	color: black;
+	margin-left: auto;
+}
+.account-form form .flex a:hover {
+	text-decoration:solid;
+	color: rgb(39, 248, 7);
+}
+
+.account-form .buttons .btn{
+  margin-top: 30px;
+  font-size: larger;
+	background-color: rgb(4, 181, 251);
+  border-radius: 5px;
+}
+
+.btn {
+  background-color: #4caf50;
+  border: none;
+  color: white;
+  padding: 10px 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+.btn.login-now {
+  background-color: #2196f3;
+}
+
+.btn.register-now {
+  background-color: #ff5722;
+}
